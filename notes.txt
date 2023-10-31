@@ -1,0 +1,14 @@
+Wheelchair resevration
+
+Name, Phone, email
+Pick up and drop off date (and time?) - require 24 hour notice?
+Kid or adult boolean
+- Height and weight
+Type of wheelchair
+- Adult stroller
+- Power chair
+- Light weight power chair
+
+
+Returning customer
+Password

@@ -1,0 +1,27 @@
+Html:
+
+An h1 tag that clearly describes what your webpage is about
+2 input controls – each with id values - (with corresponding labels or paragraphs) for getting short text input from the user. Could ask for something like:
+Name, city, state, school, dog’s name, etc.
+A calendar input – with id value – and a label or paragraph asking for the selection of a particular date
+A drop down list box – with id value - with at least 4 items to choose – and a label or paragraph letting the user know what it is they are actually choosing.
+2 controls or paragraphs, or element of some type, that will hold your output. Each needs an id.
+Css:
+
+It’s not about styling in this assignment, but your webpage shouldn’t look terrible either. It is okay to do basically like the example webpage has – some basic styling for the element types
+It would be a good idea to make the button and outputs stand out.
+Js:
+
+You can do as the sample web program does and have a single event call a single function.
+Save your input controls to object variables (see sample code, the variables ending in Obj)
+Whatever you’re choosing to write your output to, save those two to output variables as well (sample code only has one, but the example is the variable named output
+In at least one of the text boxes, check to see if the user entered somethin Use if, else logic to have different messages depending on whether or not they did.  (In sample code, see where it starts with the comment    //check if a truthy value . . . . )
+Write the value of both of those text boxes to a string that is written to one of the output locations (for example, if your output is another textbox, make it the value property of that textbox).
+The output of the Date and the drop down list box can be written to the other output control.
+Use Select somewhere in your script. I imagine you’ll use it to check the selection made from the drop down list box.
+Check off with the instructor.  Show the following:
+
+The conditionals (if, else, and select)
+Run it – with and without entering a value in the text box monitored for a value
+Run it – selecting each of the values in the drop down list box
+Verify that selections are displayed in the output correctly
