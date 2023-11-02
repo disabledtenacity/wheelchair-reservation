@@ -1,14 +1,25 @@
-Wheelchair resevration
+H1- Accessible World Wheelchair resevration
+P- Accessible World Reservation provides free wheelchair rentals downtown Minneapolis. We are hoping to expand soon to be able to provide accessibility for people in need.
 
-Name, Phone, email
-Pick up and drop off date (and time?) - require 24 hour notice?
+First Name
+Last Name
+
+Phone, email
+
+Pick up and date (and time?) - require 24 hour notice?
+Drop off date and time
+
 Kid or adult boolean
-- Height and weight
+- Height (lbs) and weight (feet, inches)
+
 Type of wheelchair
 - Adult stroller
-- Power chair
+- All terrain power chair
 - Light weight power chair
+- Standard push
+- Light weight manual
 
+Note: all 
 
 Returning customer
-Password
+Password, username
