@@ -14,7 +14,20 @@
             <p class="body__text">Accessible World Reservation provides free wheelchair rentals downtown Minneapolis. We are hoping to expand soon to be able to provide accessibility for people in need.</p>
         </header>
         <section class="order-form__container">
-            
+            <form action="/" class="order-form">
+                <label for="first_name" class="form__label">First Name</label>
+                <input type="text" name="first_name" id="first_name" class="form__input"><br>
+                <label for="last_name" class="form__label">Last Name</label>
+                <input type="text" name="last_name" id="last_name" class="form__input"><br>
+                <label for="email" class="form__label">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" name="phone_number" id="phone_number">
+                <p class="form__input">Perferred Method of Contact</p>
+                <input type="radio" value="Email" name="contact-method" id="">
+                <input type="radio" value="Phone call" name="contact-method" id="">
+                <input type="radio" name="contact-method" id="">
+            </form>
         </section>
     </section>
 </body>
