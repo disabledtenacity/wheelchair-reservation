@@ -13,11 +13,11 @@ Kid or adult boolean
 - Height (lbs) and weight (feet, inches)
 
 Type of wheelchair
+- Standard push
+- Light weight manual
 - Adult stroller
 - All terrain power chair
 - Light weight power chair
-- Standard push
-- Light weight manual
 
 Note: all 
 

@@ -15,18 +15,52 @@
         </header>
         <section class="order-form__container">
             <form action="/" class="order-form">
+                <!-- Customer and contact information -->
+                <!-- First and Last Name -->
                 <label for="first_name" class="form__label">First Name</label>
                 <input type="text" name="first_name" id="first_name" class="form__input"><br>
                 <label for="last_name" class="form__label">Last Name</label>
                 <input type="text" name="last_name" id="last_name" class="form__input"><br>
+                <!-- Contact information -->
                 <label for="email" class="form__label">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email"><br>
                 <label for="phone_number">Phone Number</label>
                 <input type="tel" name="phone_number" id="phone_number">
-                <p class="form__input">Perferred Method of Contact</p>
-                <input type="radio" value="Email" name="contact-method" id="">
-                <input type="radio" value="Phone call" name="contact-method" id="">
-                <input type="radio" name="contact-method" id="">
+                <!-- Contact Radio Buttons -->
+                <p class="form__subheading">Perferred Method of Contact</p>
+                <input type="radio" value="Email" name="contact-method" id="radio-btn__email" class="radio-btn">
+                <label for="radio-btn__email">Email</label><br>
+                <input type="radio" value="Phone call" name="contact-method" id="radio-btn__phone" class="radio-btn">
+                <label for="radio-btn__phone">Phone call</label><br>
+                <input type="radio" value="Text message" name="contact-method" id="radio-btn__txt" class="radio-btn">
+                <label for="radio-btn__txt">Text message</label><br>
+                <!-- Drop off and Pick up -->
+                <label for="pickup-details" class="form__label">Pick up date and time</label>
+                <input type="datetime-local" name="pickup_datetime" id="pickup_datetime"><br>
+                <label for="dropoff-details" class="form__label">Drop off date and time</label>
+                <input type="datetime-local" name="dropoff_datetime" id="dropoff_datetime">
+                <p class="form__important-note">Note: Please make <a href="mailto:"></a>reservations at least 24 hours in advanced. If you need a wheelchair sooner, please call and text (***) ***-****.</p>
+                <!-- Size information -->
+                <p class="form__label">Height</p>
+                <input type="number" name="height-feet" id="height-feet">
+                <label for="height-feet" class="form__label">ft</label>
+                <input type="number" name="height-inches" id="height-inches">
+                <label for="height-inches" class="form__label">in</label>
+                <p class="form__label">Weight</p>
+                <input type="number" name="weight" id="weight">
+                <label for="weight">lb</label><br>
+                <input type="checkbox" name="kid-checkbox" id="kid-checkbox"><br>
+                <label for="kid-checkbox">Child size</label><br>
+                <!-- Wheelchair select -->
+                <select name="wheelchairtype" id="wheelchairype__menu">
+                    <option value="standard-push" class="wheelchair__option">Standard push</option>
+                    <option value="light-weight-manual" class="wheelchair__option">Light Weight Manual</option>
+                    <option value="adult-stroller" class="wheelchair__option">Adult stroller</option>
+                    <option value="all-terrain-power" class="wheelchair__option">All terrain power</option>
+                    <option value="light-weight-power" class="wheelchair__option">Light weight power</option>
+                </select><br>
+                <!-- Submit form -->
+                <button class="submit__btn" id="sumbit__btn">Make reservation</button>
             </form>
         </section>
     </section>
