@@ -22,19 +22,34 @@ b/* ======== Table of Contents ========
 :root{
     /* ======== Fonts ======== */
     /* Font families */
-
+    --ff-body: 'Roboto', sans-serif;
     /* Font sizes */
-
+    --fs-h1: 2rem;
+    --fs-body: 1.2rem;
     /* Font weights */
-    
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
     /* ======== Colors ======== */
-    
+    --drk-blue: hsl(204, 54%, 31%);
+    --teal: hsl(180, 52%, 91%);
+    --lgt-blue: hsl(192, 82%, 60%);
     /* ========  */
+}
+
+.background--color{
+    background-color: var(--lgt-blue);
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
 .page__container{
     margin: 0 auto;
-    max-width: 90rem;
+    max-width: 45rem;
+    font-family: var(--ff-body);
+    font-size: fs;
+    font-weight: var(--ff-body);
+    color: var(--drk-blue);
 }
 
 /* ======== 2. Layout ======== */
@@ -42,16 +57,19 @@ b/* ======== Table of Contents ========
 /* 2.2 Flex */
 /* ======== 3. Typography ======== */
 
+.header__title{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-500);
+}
 
+.form__subheading{
+    font-weight: var(--fw-700);
+}
 
 /* ======== 4. Utilities ======== */
 
 a{
     text-decoration: none;
-}
-
-img{
-    max-width: 100%;
 }
 
 /* ======== 5. Sections ======== */
@@ -61,4 +79,6 @@ img{
 /* ======== 6. Conponents ======== */
 
 
-
+br{
+    margin-bottom: 0.75rem;
+}
