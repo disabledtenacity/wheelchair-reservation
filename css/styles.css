@@ -33,12 +33,12 @@ b/* ======== Table of Contents ========
     /* ======== Colors ======== */
     --drk-blue: hsl(204, 54%, 31%);
     --teal: hsl(180, 52%, 91%);
-    --lgt-blue: hsl(192, 82%, 60%);
+    --lgt-blue: hsl(192, 89%, 60%);
     /* ========  */
 }
 
 .background--color{
-    background-color: var(--lgt-blue);
+    background-color: var(--drk-blue);
     max-width: 60rem;
     margin: 0 auto;
 }
@@ -49,7 +49,7 @@ b/* ======== Table of Contents ========
     font-family: var(--ff-body);
     font-size: fs;
     font-weight: var(--ff-body);
-    color: var(--drk-blue);
+    color: var(--lgt-blue);
 }
 
 /* ======== 2. Layout ======== */

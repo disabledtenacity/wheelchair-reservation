@@ -23,3 +23,7 @@ Note: all
 
 Returning customer
 Password, username
+
+Thanks for your reservation!
+
+Your [adult/child] [wheelchair type] will be ready for pickup [date] at [time]. Your dropoff time is scheduled to for [date] at [time]. If you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation.
