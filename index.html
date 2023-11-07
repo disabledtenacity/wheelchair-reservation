@@ -53,18 +53,19 @@
                 <p class="form__label">Weight</p>
                 <input type="number" name="weight" id="weight">
                 <label for="weight">lb</label><br>
-                <input type="checkbox" name="kid-checkbox" id="kid-checkbox">
-                <label for="kid-checkbox">Child size</label><br>
+                <input type="checkbox" name="child-checkbox" id="child-checkbox">
+                <label for="child-checkbox">Child size</label><br>
                 <!-- Wheelchair select -->
-                <select name="wheelchairtype" id="wheelchairype__menu">
+                <select name="wheelchairtype" id="wheelchairtype-menu">
                     <option value="standard-push" class="wheelchair__option">Standard push</option>
                     <option value="light-weight-manual" class="wheelchair__option">Light Weight Manual</option>
-                    <option value="adult-stroller" class="wheelchair__option">Adult stroller</option>
+                    <option value="stroller" class="wheelchair__option">Stroller</option>
                     <option value="all-terrain-power" class="wheelchair__option">All terrain power</option>
                     <option value="light-weight-power" class="wheelchair__option">Light weight power</option>
                 </select><br>
                 <!-- Submit form -->
-                <button class="submit__btn" id="sumbit__btn">Make reservation</button>
+                <button class="submit__btn" id="sumbit__btn" onclick="confirmReservation">Make reservation</button>
+                <p id="reservationComfirmation"></p>
             </form>
         </section>
     </section>

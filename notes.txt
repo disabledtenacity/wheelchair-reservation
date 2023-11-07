@@ -26,4 +26,15 @@ Password, username
 
 Thanks for your reservation!
 
-Your [adult/child] [wheelchair type] will be ready for pickup [date] at [time]. Your dropoff time is scheduled to for [date] at [time]. If you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation.
+Your [adult/child] [wheelchair type] will be ready for pickup [date] at [time]. Your dropoff time is scheduled to for [date] at [time]. If you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be used 
+
+JS need to do
+
+[] Calendar functions
+[|] Boolean kid/Adult (switch?)
+[] Drop down menu (switch?)
+[] Pop up message
+
+Make sure to
+
+- Switch instead of select
