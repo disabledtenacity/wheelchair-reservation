@@ -1,6 +1,13 @@
+// Onclick
+
+function test(){
+    var msgDiv = document.getElementById("ConfirmMsg");
+    msgDiv.innerText = "Foo Bar";
+};
+
 // Reservation processing and comfirmation
 
-function confirmReservation(){
+function confirmReservation(){};
 
 // Contact radio buttons
 
@@ -61,4 +68,5 @@ function confirmReservation(){
             break;
         };
     };
-};
+
+document.getElementById("submit__btn").addEventListener("click", test());
