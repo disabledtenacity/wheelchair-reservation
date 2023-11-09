@@ -1,10 +1,25 @@
 // Reservation processing and comfirmation
 
-function makeReservation(){
+function confirmReservation(){
 
-    // Contact radio buttons
+// Contact radio buttons
+
+    function perferredContactMethod(){
+        var contactMethod = document.getElementsByName;
+
+        for (var i = 0; i < contactMethod.length; i++) {
+            if (contactMethod[i].checked) {
+                alert( + contactMethod[i].value);
+                return;
+            }
+        }
+    };
 
 // Calendar controls
+
+    function perferredCalendar(){
+        
+    };
 
 // Kid or adult boolean checkbox
 
