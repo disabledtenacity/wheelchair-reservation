@@ -7,10 +7,10 @@
 
 // Reservation processing and comfirmation
 
-function test(){
+function confirmReservation(){
+
     var msgDiv = document.getElementById("msg");
        msgDiv.innerText = "Foo Bar";
-};
 
 // Contact radio buttons
 
@@ -24,6 +24,7 @@ function test(){
             }
         }
     };
+
 // Calendar controls
 
     
@@ -68,5 +69,5 @@ function test(){
             break;
         };
     };
-
-document.getElementById("submit__btn"),addEventListener("click", test); 
+};
+document.getElementById("submit__btn").addEventListener("click", test);

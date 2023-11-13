@@ -43,3 +43,5 @@ Make sure to
 - Doc add event listener for click event call function
 
 test  
+
+If [var is empty], fill it out.
