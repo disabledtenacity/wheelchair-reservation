@@ -1,51 +1,37 @@
-// Onclick
+// Variables
 
-// function test(){
-//     var msgDiv = document.getElementById("msg");
-//     msgDiv.innerText = "Foo Bar";
-// };
+var firstName = document.getElementById('firstName');
+var childCheckbox = document.getElementById('childCheckbox');
+var wheelchairSelect = document.getElementById('wheelchairSelect');
+var pickupDatetime = document.getElementById('pickupDatetime');
+var dropoffDatetime = document.getElementById('dropoffDatetime');
+var perferredContactMethod = document.getElementById('perferredContactMethod');
 
 // Reservation processing and comfirmation
 
-function test(){
+function reservation(){
     var msgDiv = document.getElementById("msg");
-       msgDiv.innerText = "Foo Bar";
+    msgDiv.innerText = "Thanks for your reservation, ${firstName}! Your ${childCheckbox} ${wheelchairSelect}. Your pickup time is scheduled for ${pickupDatetime}. Your dropoff time is scheduled for ${dropoffDatetime}. If /you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be sent to you via ${perferredContactMethod}";
 };
-
-// Contact radio buttons
-
-    function perferredContactMethod(){
-        var contactMethod = document.getElementsByName;
-
-        for (var i = 0; i < contactMethod.length; i++) {
-            if (contactMethod[i].checked) {
-                alert( + contactMethod[i].value);
-                return;
-            }
-        }
-    };
-// Calendar controls
-
-    
 
 // Kid or adult boolean checkbox
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const checkbox = document.getElementById('child-checkbox');
-        const statusElement = document.getElementById('status');
+document.addEventListener('DOMContentLoaded', function() {
+    const checkbox = document.getElementById('child-checkbox');
+    const statusElement = document.getElementById('status');
 
-        checkbox.addEventListener('change', function() {
-            if (checkbox.checked) {
-                statusElement.checked = 'Child';
-            }
-            else {
-                statusElement.textContent = 'Adult';
-            }
-        });
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            statusElement.checked = 'Child';
+        }
+        else {
+            statusElement.textContent = 'Adult';
+        }
     });
+});
 
 // Wheelchair switch dropdown
-    function comfirmReservation(){
+function wheelchairSelect(){
     const selector = document.getElementById('wheelchairtype-menu');
     const resultElement = document.getElementById('reservationComfirmation');
     const selectedValue = selector.value;
@@ -69,4 +55,21 @@ function test(){
         };
     };
 
-document.getElementById("submit__btn"),addEventListener("click", test); 
+// Calendar controls
+
+// Contact radio buttons
+
+    function perferredContactMethod(){
+        var contactMethod = document.getElementsByName;
+
+        for (var i = 0; i < contactMethod.length; i++) {
+            if (contactMethod[i].checked) {
+                alert( + contactMethod[i].value);
+                return;
+            }
+        }
+    };
+
+// Call onclick function
+
+document.getElementById("submit__btn"),addEventListener("click", reservation); 
