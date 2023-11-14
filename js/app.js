@@ -1,17 +1,17 @@
 // Variables
 
-var firstName = document.getElementById('firstName');
-var childCheckbox = document.getElementById('childCheckbox');
-var wheelchairSelect = document.getElementById('wheelchairSelect');
-var pickupDatetime = document.getElementById('pickupDatetime');
-var dropoffDatetime = document.getElementById('dropoffDatetime');
-var perferredContactMethod = document.getElementById('perferredContactMethod');
+let firstName = document.getElementById('firstName');
+let childCheckbox = document.getElementById('childCheckbox');
+let wheelchairSelect = document.getElementById('wheelchairSelect');
+let pickupDatetime = document.getElementById('pickupDatetime');
+let dropoffDatetime = document.getElementById('dropoffDatetime');
+let perferredContactMethod = document.getElementById('perferredContactMethod');
 
 // Reservation processing and comfirmation
 
 function reservation(){
     var msgDiv = document.getElementById("msg");
-    msgDiv.innerText = "Thanks for your reservation, ${firstName}! Your ${childCheckbox} ${wheelchairSelect}. Your pickup time is scheduled for ${pickupDatetime}. Your dropoff time is scheduled for ${dropoffDatetime}. If /you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be sent to you via ${perferredContactMethod}";
+    msgDiv.innerText = `Thanks for your reservation, ${firstName}! Your ${childCheckbox} ${wheelchairSelect}. Your pickup time is scheduled for ${pickupDatetime}. Your dropoff time is scheduled for ${dropoffDatetime}. If /you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be sent to you via ${perferredContactMethod}`;
 };
 
 // Kid or adult boolean checkbox
