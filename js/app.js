@@ -5,10 +5,9 @@ const childCheckbox = document.getElementById('childCheckbox');
 const wheelchairSelect = document.getElementById('wheelchairSelect');
 const pickupDatetime = document.getElementById('pickupDatetime');
 const dropoffDatetime = document.getElementById('dropoffDatetime');
-const perferredContactMethod = document.getElementById('perferredContactMethod');
+const contactMethod = document.getElementsByName('contactMethod');
 const msgDiv = document.getElementById('msg');
 const statusElement = document.getElementById('status');
-const contactMethod = document.getElementsById('radio__btn');
 const selector = document.getElementById('wheelchairtype-menu');
 const resultElement = document.getElementById('reservationComfirmation');
 const selectedValue = selector.value;
@@ -17,7 +16,7 @@ const selectedValue = selector.value;
 // Reservation processing and comfirmation
 
 function test(){
-    msgDiv.innerText = `Thanks for your reservation, ${firstName.value}! Your ${childCheckbox} ${wheelchairSelect}. Your pickup time is scheduled for ${pickupDatetime.value}. Your dropoff time is scheduled for ${dropoffDatetime.value}. If /you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be sent to you via ${perferredContactMethod}.`;
+    msgDiv.innerText = `Thanks for your reservation, ${firstNameValue}! Your ${childCheckbox} ${wheelchairSelect}. Your pickup time is scheduled for ${pickupDatetimeValue}. Your dropoff time is scheduled for ${dropoffDatetimeValue}. If /you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be sent to you via ${perferredContactMethod}.`;
 };
 
 // Kid or adult boolean checkbox
@@ -32,8 +31,8 @@ function checkboxStatus(){
 };
 
 // Wheelchair switch dropdown
-function wheelchairSelect(){
-    switch (selector.checked) {
+function wheelchairDropdown(){
+    switch (selector.value) {
         case 'standard-push':
             resultElement.textContent = 'Standard Push';
             break;
@@ -57,7 +56,7 @@ function wheelchairSelect(){
 function perferredContactMethod(){
     for (var i = 0; i < contactMethod.length; i++) {
         if (contactMethod[i].checked) {
-            alert( + contactMethod[i].value);
+            alert(contactMethod[i].value);
             return;
         }
     }
@@ -65,4 +64,6 @@ function perferredContactMethod(){
 
 // Call onclick function
 
-document.getElementById("submit__btn").addEventListener("click", test); 
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("btn").addEventListener("click", test);
+});

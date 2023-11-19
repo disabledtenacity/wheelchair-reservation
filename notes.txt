@@ -45,3 +45,6 @@ Make sure to
 test  
 
 If [var is empty], fill it out.
+
+
+document.getElementById("btn").addEventListener("click", test); 
