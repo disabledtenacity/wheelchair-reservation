@@ -4,7 +4,7 @@ const firstName = document.getElementById('firstName');
 const childCheckbox = document.getElementById('childCheckbox');
 const wheelchairSelect = document.getElementById('wheelchairSelect');
 const pickupDatetime = document.getElementById('pickupDatetime');
-const dropoffDatetime = document.getElementById('dropoffDatetime');
+const dropoffDatetime = document.getElementById('dropoffDatetime'); 
 const contactMethod = document.getElementsByName('contactMethod');
 const msgDiv = document.getElementById('msg');
 const statusElement = document.getElementById('status');
@@ -63,6 +63,7 @@ function perferredContactMethod(){
 };
 
 // Call onclick function
+
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("btn").addEventListener("click", test);
