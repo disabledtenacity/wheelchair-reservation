@@ -48,3 +48,7 @@ If [var is empty], fill it out.
 
 
 document.getElementById("btn").addEventListener("click", test); 
+
+function test() {
+    msgDiv.innerText = `Thanks for your reservation, ${firstNameValue}! Your ${childCheckbox} ${wheelchairSelect}. Your pickup time is scheduled for ${pickupDatetimeValue}. Your dropoff time is scheduled for ${dropoffDatetimeValue}. If /you need to change your reservation at any time, please contact us as soon as possible. A email will be sent to you with your reservation comfirmation along with more imformation. Any futher contact information will be sent to you via ${perferredContactMethod}.`;
+};
